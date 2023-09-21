@@ -24,8 +24,7 @@ default-target = "x86_64-pc-windows-msvc"
 [dependencies]
 static_assertions = "1.1.0"
 lazy_static = "1.4.0"
-# Depend on forked winapi for now. Will change this when icmpapi is merged
-winapi = { package = "winapi_forked_icmpapi", version = "0.3.7", features = ["errhandlingapi", "icmpapi", "iphlpapi", "impl-default", "handleapi", "synchapi", "winbase", "winerror"] }
+winapi = { package = "winapi", version = "0.3.9", features = ["errhandlingapi", "icmpapi", "iphlpapi", "impl-default", "handleapi", "synchapi", "winbase", "winerror"] }
 
 [dev-dependencies]
 futures = "0.3.1"
