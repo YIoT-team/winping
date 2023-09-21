@@ -24,7 +24,7 @@ default-target = "x86_64-pc-windows-msvc"
 [dependencies]
 static_assertions = "1.1.0"
 lazy_static = "1.4.0"
-winapi = { package = "winapi", version = "0.3.9", features = ["errhandlingapi", "icmpapi", "iphlpapi", "impl-default", "handleapi", "synchapi", "winbase", "winerror"] }
+winapi = { git = "https://github.com/YIoT-team/winapi-rs.git", branch = "feature/3.9-icmpapi", features = ["errhandlingapi", "icmpapi", "iphlpapi", "impl-default", "handleapi", "synchapi", "winbase", "winerror"] }
 
 [dev-dependencies]
 futures = "0.3.1"
